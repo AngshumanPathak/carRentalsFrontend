@@ -100,7 +100,7 @@ export const NavBar = () => {
         </div>
       )}
 
-                <div className="sm:hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4 bg-black/80 text-white p-3 rounded-full shadow-lg z-50 w-100">
+                <div className="sm:hidden fixed bottom-4 left-55 transform -translate-x-1/2 flex space-x-4 bg-black/80 text-white p-3 rounded-full shadow-lg z-50 w-100">
                 <Button className="bg-yellow-500 hover:bg-yellow-600 rounded-full px-4 py-2"><img src={home} alt="" className="w-10 p-2" onClick={() => handleScroll('home')}/></Button>
                 <Button className="bg-yellow-500 hover:bg-yellow-600 rounded-full px-4 py-2"><img src={about} alt="" className="w-10 p-2"onClick={() => handleScroll('about')}/></Button>
                 <Button className="bg-yellow-500 hover:bg-yellow-600 rounded-full px-4 py-2"><img src={services} alt="" className="w-10 p-2"onClick={() => handleScroll('search')}/></Button>

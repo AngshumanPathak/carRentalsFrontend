@@ -5,7 +5,7 @@ const Contacts = () => {
     <div className="text-white p-10">
       <h1 className="text-4xl font-bold mb-10">Contact Us</h1>
       <hr className='text-yellow-300 mb-5'/>
-      <div className="flex flex-col sm:flex-row items-center gap-8 p-8 bg-gradient-to-r from-yellow-500 to-neutral-950 rounded-2xl shadow-lg">
+      <div className="flex flex-col sm:flex-row items-center gap-8 p-8 bg-transparent sm:bg-gradient-to-r from-yellow-500 to-neutral-950 rounded-2xl shadow-lg">
   {/* Contact Information */}
   <div className="flex flex-col sm:w-1/2 text-white sm:h-125">
     <h1 className="flex justify-center text-3xl font-bold mb-6 text-center sm:text-left">Reach Out at</h1>

@@ -10,8 +10,8 @@ const About = () => {
     <div className='p-10'>
       <h1 className="text-4xl font-bold mb-10">About us</h1>
       <hr className='text-yellow-300 mb-5'/>
-      <div className='flex flex-col items-center sm:flex-row p-5 bg-gradient-to-r from-yellow-500 to bg-neutral-950 rounded-2xl'>
-        <div className='w-auto sm:w-150 mt-6 text-black font-medium'>
+      <div className='flex flex-col items-center sm:flex-row p-5 bg-transparent sm:bg-gradient-to-r from-yellow-500 to neutral-950 rounded-2xl'>
+        <div className='w-auto sm:w-150 mt-6 text-white sm:text-black font-medium'>
             <p>
              Welcome to NH37 Car Rentals, Guwahati’s trusted self-drive car rental service. Whether you're looking for a rugged SUV for an adventure, a sleek sedan for business travel, or a compact hatchback for city drives, we have the perfect ride for you.
             </p>

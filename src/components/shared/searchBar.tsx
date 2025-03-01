@@ -54,7 +54,7 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
            <Button
             variant={"outline"}
              className={cn(
-              "w-[130px] sm:w-[280px] h-20 sm:h-9 justify-start text-left font-normal rounded-l-full bg-yellow-500 text-white","whitespace-normal break-words  bg-neutral-950 border-gray-700"
+              "w-[100px] sm:w-[280px] h-20 sm:h-9 justify-start text-left font-normal rounded-l-md sm:rounded-l-full bg-yellow-500 text-white","whitespace-normal break-words  bg-neutral-950 border-gray-700"
             
              )}
             >
@@ -78,7 +78,7 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
            <Button
             variant={"outline"}
              className={cn(
-              "w-[130px] sm:w-[280px] h-20 sm:h-9 justify-start text-left font-normal bg-yellow-500 text-white","whitespace-normal break-words bg-neutral-950 border-gray-700"
+              "w-[100px] sm:w-[280px] h-20 sm:h-9 justify-start text-left font-normal bg-yellow-500 text-white","whitespace-normal break-words bg-neutral-950 border-gray-700"
             
              )}
             >
@@ -98,7 +98,7 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
         </div>
         <div>
         <DropdownMenu>
-           <DropdownMenuTrigger className="text-sm text-white border border-gray-800 p-1.75 rounded-r-full bg-neutral-950 w-[130px] sm:w-[280px] h-20 sm:h-9 hover:bg-white hover:text-black">
+           <DropdownMenuTrigger className="text-sm text-white border border-gray-800 p-1.75 rounded-r-md sm:rounded-r-full bg-neutral-950 w-[100px] sm:w-[280px] h-20 sm:h-9 hover:bg-white hover:text-black">
             {category}</DropdownMenuTrigger >
            <DropdownMenuContent >
            
