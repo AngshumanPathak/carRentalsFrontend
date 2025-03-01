@@ -13,7 +13,7 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Button } from "../ui/button";
-import { Calendar } from "../ui/calendar"
+
 
 
 interface Booking {
@@ -38,7 +38,6 @@ const CarCard = () => {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string>("SUV");
   const {dateFrom, dateTo, category} = useSelector((state: RootState) => state.search);
   const [selectedTab, setSelectedTab] = useState<string>("All");
 
@@ -141,7 +140,7 @@ const CarCard = () => {
             </Card>
           ))
         ) : (
-          <p className="text-gray-400 col-span-full">No {selectedCategory} available</p>
+          <p className="text-gray-400 col-span-full">No {selectedTab} available</p>
         )}
       </div>
     </div>

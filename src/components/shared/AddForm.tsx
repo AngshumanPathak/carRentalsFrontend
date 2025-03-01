@@ -2,7 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '../ui/button';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import {
     Form,
@@ -37,8 +37,7 @@ const defaultValues = {
 
 export function AddForm() {
 
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
+    
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -46,8 +45,7 @@ export function AddForm() {
     });
 
     const onSubmit = async (data: z.infer<typeof formSchema>) => {
-        setLoading(true);
-        setError("");
+        
     
         try {
             const vehicleData = {
@@ -60,10 +58,8 @@ export function AddForm() {
             console.log("Upload success:", response);
         } catch (error) {
             console.error("Upload failed:", error);
-            setError("Failed to upload vehicle.");
-        } finally {
-            setLoading(false);
-        }
+        }    
+        
     };
     
     
@@ -87,6 +83,7 @@ export function AddForm() {
              
            <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            
                 <FormField
                     control={form.control}
                     name="name"

@@ -45,8 +45,7 @@ const BookingDashboard = () => {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [dateFrom, setDateFrom] = useState<Date>()
-    const [dateTo, setDateTo] = useState<Date>()
+    
     const [selectedDates, setSelectedDates] = useState<{ 
       [key: string]: { dateFrom?: Date; dateTo?: Date } 
     }>({});
@@ -154,8 +153,12 @@ const BookingDashboard = () => {
         <div className="p-10">
       <h1 className="text-3xl font-bold mb-6">Booking Dashboard</h1>
 
+      {loading && <p className="text-blue-500">Loading vehicles...</p>}
+      {error && <p className="text-red-500">{error}</p>}
+
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {vehicles.map((vehicle) => {
+      {!loading && !error && vehicles.map((vehicle) => {
           // Get dates for this specific vehicle
           const vehicleDates = selectedDates[vehicle._id] || {};
 
@@ -185,7 +188,7 @@ const BookingDashboard = () => {
                 variant={"outline"}
                 className={cn(
                 "w-[240px] justify-start text-left font-normal",
-                !dateFrom && "text-muted-foreground rounded-md mt-2"
+                !selectedDates && "text-muted-foreground rounded-md mt-2"
                  )}
               >
              <CalendarIcon />
@@ -211,7 +214,7 @@ const BookingDashboard = () => {
                 variant={"outline"}
                 className={cn(
                 "w-[240px] justify-start text-left font-normal",
-                !dateTo && "text-muted-foreground rounded-md mt-2"
+                !selectedDates && "text-muted-foreground rounded-md mt-2"
                  )}
               >
              <CalendarIcon />
