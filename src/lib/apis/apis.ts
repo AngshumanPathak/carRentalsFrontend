@@ -2,9 +2,9 @@
 
 
 
-const API_URL = "https://nh-37-car-rentals-ae755c1171a6.herokuapp.com/api";
+const VITE_API_BASE_URL = "https://nh-37-car-rentals-ae755c1171a6.herokuapp.com/api";
 
-console.log(API_URL);
+console.log(VITE_API_BASE_URL);
 
 export const addVehicle = async (vehicleData: any) => {
     try {
@@ -28,7 +28,7 @@ export const addVehicle = async (vehicleData: any) => {
             formData.append("images", vehicleData.image); // ✅ Single image case
         }
 
-        const response = await fetch(`${API_URL}/vehicles`, {
+        const response = await fetch(`${VITE_API_BASE_URL}/vehicles`, {
             method: "POST",
             body: formData, // ✅ No need to set Content-Type manually
         });
@@ -48,7 +48,7 @@ export const addVehicle = async (vehicleData: any) => {
 
 export const getVehicles = async () => {
     try {
-        const response = await fetch(`${API_URL}/vehicles`);
+        const response = await fetch(`${VITE_API_BASE_URL}/vehicles`);
         return await response.json();
     } catch (error) {
         console.error("Error fetching vehicles:", error);
@@ -59,7 +59,7 @@ export const getVehicles = async () => {
 
 export const getReviews = async () => {
     try {
-      const response = await fetch(`${API_URL}/reviews`);
+      const response = await fetch(`${VITE_API_BASE_URL}/reviews`);
       const data = await response.json();
   
       console.log("Raw API Response:", data); // Debugging
@@ -75,7 +75,7 @@ export const getReviews = async () => {
 
   export const addBooking = async (bookingData: { vehicleId: string; bookedFrom: string; bookedTill: string }) => {
     try {
-        const response = await fetch(`${API_URL}/bookings`, {
+        const response = await fetch(`${VITE_API_BASE_URL}/bookings`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -98,7 +98,7 @@ export const getReviews = async () => {
 
 export const deleteBooking = async (bookingData: { vehicleId: string; bookedFrom: string; bookedTill: string }) => {
     try {
-        const response = await fetch(`${API_URL}/bookings`, {
+        const response = await fetch(`${VITE_API_BASE_URL}/bookings`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
