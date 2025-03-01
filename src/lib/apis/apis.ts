@@ -4,6 +4,8 @@
 
 const API_URL = "https://nh-37-car-rentals-ae755c1171a6.herokuapp.com/api";
 
+console.log(API_URL);
+
 export const addVehicle = async (vehicleData: any) => {
     try {
         const formData = new FormData();
