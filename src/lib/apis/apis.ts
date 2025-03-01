@@ -2,7 +2,7 @@
 
 
 
-const API_URL = process.env.BACKEND_URL;
+const API_URL = import.meta.env.BACKEND_URL as string;
 
 export const addVehicle = async (vehicleData: any) => {
     try {
