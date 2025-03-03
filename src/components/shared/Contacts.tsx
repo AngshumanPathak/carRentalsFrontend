@@ -16,7 +16,7 @@ const Contacts = () => {
       <div className="space-y-4">
         <p className="flex items-center gap-3 mt-10">
           📞 <span className="font-small sm:font-medium">Phone:</span>  
-          <a href="tel:+917002272388" className="text-yellow-400 hover:underline">7002272388</a>,  
+          <a href="tel:+917002272388" className="text-yellow-400 hover:underline">7002272388</a>  
           <a href="tel:+917002567003" className="text-yellow-400 hover:underline">7002567003</a>
         </p>
 
