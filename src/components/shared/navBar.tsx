@@ -7,7 +7,7 @@ import services from "../../assets/icons/car.svg"
 import contact from "../../assets/icons/contacts.svg"
 import {useNavigate} from "react-router-dom"
 import { useState } from "react";
-import AboutImage1 from "../../assets/images/AboutImage1.jpg"
+
 
 export const NavBar = () => {
 
