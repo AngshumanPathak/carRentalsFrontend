@@ -25,16 +25,24 @@ export const Caraousel = () => {
       return (
 
         <div className="absolute top-0 left-0 w-full h-full">
-      <motion.img
+      <motion.div
         key={currentIndex}
-        src={images[currentIndex]}
-        alt="Carousel"
-        className="w-full h-full object-cover opacity-80"
+        className="relative w-full h-full"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 1.1 }}
         transition={{ duration: 1 }}
-      />
+      >
+        {/* Background Image */}
+        <img
+          src={images[currentIndex]}
+          alt="Carousel"
+          className="w-full h-full object-cover opacity-80"
+        />
+
+        {/* Bottom Fade Effect */}
+        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
+      </motion.div>
     </div>
       );
 };

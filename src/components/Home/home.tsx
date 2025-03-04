@@ -29,12 +29,16 @@ const Home = () => {
 
         <div id="contacts">
           <Contacts/>
-        </div>   
+        </div> 
+        
+          
          
         </>
        ):(
         <CarCard/>
-       )}
+       )
+       
+       }
            
     </>
     
