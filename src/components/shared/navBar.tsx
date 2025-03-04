@@ -1,22 +1,34 @@
 import { Button } from "../ui/button"
 import MainLogo from "../../assets/images/MainLogo.png"
 
-import XUV700 from "../../assets/images/Nepoli black xuv700 (1).png"
+
 import home from "../../assets/icons/home.svg"
 import about from "../../assets/icons/about.svg"
 import services from "../../assets/icons/car.svg"
 import contact from "../../assets/icons/contacts.svg"
 import {useNavigate} from "react-router-dom"
-import { useState } from "react";
+import { useState} from "react";
+
+import { Caraousel } from "./Caraousel"
+
 
 
 export const NavBar = () => {
+
+
+
+
 
     const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
+ 
+
+
+ 
 
   // Hardcoded admin credentials
   const ADMIN_EMAIL = "bishalboro268@gmail.com";
@@ -44,7 +56,8 @@ export const NavBar = () => {
 
     
     return (
-        <div className="relative bg-gradient-to-b from-yellow-500 to-black-300 h-70 w-vw flex flex-col items-center rounded-b-[70%]">
+        <div className="relative h-100 w-vw flex flex-col items-center">
+          <Caraousel/>
             <div className="flex justify-between items-center p-4 w-full max-w-6xl">
                 <div className="z-10">
                     <img src={MainLogo} alt="Main Logo" className="h-auto w-auto"/>
@@ -120,9 +133,7 @@ export const NavBar = () => {
                         <span className="animate-pulse opacity-50 delay-300">.</span>
                     </span>
                 </h1>
-                <div className=" w-full max-w-4xl sm:-mt-5">
-                    <img src={XUV700} alt="Porche" className="w-full h-auto "/>
-                </div>
+                
                 
             </div>
         </div>
