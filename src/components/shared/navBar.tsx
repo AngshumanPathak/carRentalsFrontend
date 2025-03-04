@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import MainLogo from "../../assets/images/MainLogo.png"
-import Porche from "../../assets/images/Porche.png"
+
+import XUV700 from "../../assets/images/Nepoli black xuv700 (1).png"
 import home from "../../assets/icons/home.svg"
 import about from "../../assets/icons/about.svg"
 import services from "../../assets/icons/car.svg"
@@ -119,8 +120,8 @@ export const NavBar = () => {
                         <span className="animate-pulse opacity-50 delay-300">.</span>
                     </span>
                 </h1>
-                <div className=" w-full max-w-4xl -mt-10 sm:-mt-40">
-                    <img src={Porche} alt="Porche" className="w-full h-auto "/>
+                <div className=" w-full max-w-4xl sm:-mt-5">
+                    <img src={XUV700} alt="Porche" className="w-full h-auto "/>
                 </div>
                 
             </div>

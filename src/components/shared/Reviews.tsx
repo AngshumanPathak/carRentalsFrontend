@@ -56,12 +56,12 @@ const Reviews = () => {
     if (error) return <div className="text-red-500">{error}</div>;
 
     return (
-        <div className="p-6">
+        <div className="p-2 rounded-md">
           <h1 className="text-3xl font-bold text-center mb-6">Google Reviews</h1>
           {reviews.length === 0 ? (
             <p className="text-center text-neutral-500">No reviews available</p>
           ) : (
-            <Card className="max-w-80 sm:max-w-150 mx-auto shadow-lg p-6 transition-all duration-500 ease-in-out bg-neutral-800">
+            <Card className="max-w-100 sm:max-w-150 mx-auto shadow-lg pt-6 transition-all duration-500 ease-in-out bg-neutral-800">
               <CardContent className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">
                   <img

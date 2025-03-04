@@ -24,6 +24,11 @@ import {useDispatch} from "react-redux";
 import {setSearchFilters} from "../../redux/Search/searchAction"
 import {SearchFilters} from "../../redux/Search/searchTypes"
 
+import Airplane from "../../assets/icons/airplane.svg"
+import Clock from "../../assets/icons/clock.svg"
+import Deposit from "../../assets/icons/deposit.svg"
+import Driver from "../../assets/icons/driver.svg"
+
 export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
   const [dateFrom, setDateFrom] = React.useState<Date>()
   const [dateTo, setDateTo] = React.useState<Date>()
@@ -96,11 +101,11 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
             </PopoverContent>
            </Popover>
         </div>
-        <div>
+        <div className="realtive inline-block">
         <DropdownMenu>
            <DropdownMenuTrigger className="text-sm text-white border border-gray-800 p-1.75 rounded-r-md sm:rounded-r-full bg-neutral-950 w-[100px] sm:w-[280px] h-20 sm:h-9 hover:bg-white hover:text-black">
             {category}</DropdownMenuTrigger >
-           <DropdownMenuContent >
+           <DropdownMenuContent className="w-10">
            
               <DropdownMenuItem onSelect={() => setCategory("5 seater")}>5 seater</DropdownMenuItem>
               <DropdownMenuItem onSelect={() => setCategory("7 seater")}>7 seater</DropdownMenuItem>             
@@ -111,6 +116,12 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
     </div>
       <div>
         <Button className="text-lg h-10 w-40 mt-8 font-bold bg-yellow-500 rounded-md" onClick={()=>{handleSearch(); onSearch();}} >Search</Button>
+      </div>
+      <div className= "flex flex-row mt-10"> 
+        <p className="text-white m-4"><img src={Deposit} alt="" className="w-10 h-10" />No security deposit</p>
+        <p className="text-white m-4"><img src={Clock} alt="" className="w-10 h-10"/>24x7 pickup and drop</p>
+        <p className="text-white m-4"><img src={Airplane} alt="" className="w-10 h-10"/>Airport pickup and drop</p>
+        <p className="text-white m-4"><img src={Driver} alt="" className="w-10 h-10"/>Car with driver</p>
       </div>
     </div>
     
