@@ -1,4 +1,4 @@
-import Bhutan from "../../assets/images/bhutan.jpg"
+
 import Kaziranga from "../../assets/images/Kaziranga.jpg"
 import Shillong from "../../assets/images/RopeBridge.jpg"
 import Tawang from "../../assets/images/Tawang.jpg"
@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion";
 
 
-const images = [Bhutan, Kaziranga, Shillong, Tawang]
+const images = [Kaziranga, Shillong, Tawang]
 
 export const Caraousel = () => {
 
