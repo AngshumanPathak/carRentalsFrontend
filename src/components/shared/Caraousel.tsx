@@ -1,7 +1,7 @@
-import Bhutan from "../../assets/images/Bhutan.jpg"
-import Kaziranga from "../../assets/images/Kaziranga.jpg"
-import Shillong from "../../assets/images/RopeBridge.jpg"
-import Tawang from "../../assets/images/Tawang.jpg"
+import Bhutan from "../../assets/images/Bhutan1.jpg"
+import Kaziranga from "../../assets/images/Kaziranga1.jpg"
+import Shillong from "../../assets/images/RopeBridge1.jpg"
+import Tawang from "../../assets/images/Tawang1.jpg"
 
 
 import { useState, useEffect } from "react"
