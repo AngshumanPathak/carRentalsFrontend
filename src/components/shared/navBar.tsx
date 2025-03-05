@@ -41,7 +41,7 @@ export const NavBar = () => {
     }
   };
 
-    
+    console.log("navBar is rendered")
 
 
     
@@ -126,7 +126,7 @@ export const NavBar = () => {
             
         </div>
           </div>
-          <div>
+          <div className="z-20">
           <BottomNav/>
           </div>
         </div>

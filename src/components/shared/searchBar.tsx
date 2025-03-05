@@ -117,12 +117,26 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
       <div>
         <Button className="text-lg h-10 w-40 mt-8 font-bold bg-yellow-500 rounded-md" onClick={()=>{handleSearch(); onSearch();}} >Search</Button>
       </div>
-      <div className= "flex flex-row mt-10"> 
-        <p className="text-white m-4"><img src={Deposit} alt="" className="w-10 h-10" />No security deposit</p>
-        <p className="text-white m-4"><img src={Clock} alt="" className="w-10 h-10"/>24x7 pickup and drop</p>
-        <p className="text-white m-4"><img src={Airplane} alt="" className="w-10 h-10"/>Airport pickup and drop</p>
-        <p className="text-white m-4"><img src={Driver} alt="" className="w-10 h-10"/>Car with driver</p>
-      </div>
+      <div className="flex-col grid grid-cols-2 gap-x-16 gap-y-6 mt-10">
+  <div className="flex sm:items-center gap-3">
+    <img src={Deposit} alt="" className="w-10 h-10" />
+    <p className="text-white">No security deposit</p>
+  </div>
+  <div className="flex sm:items-center gap-3">
+    <img src={Driver} alt="" className="w-10 h-10" />
+    <p className="text-white">Car with driver</p>
+  </div>
+  <div className="flex sm:items-center gap-3">
+    <img src={Clock} alt="" className="w-10 h-10" />
+    <p className="text-white">24x7 pickup and drop</p>
+  </div>
+  <div className="flex sm:items-center gap-3">
+    <img src={Airplane} alt="" className="w-10 h-10" />
+    <p className="text-white">Airport pickup and drop</p>
+  </div>
+  
+</div>
+
     </div>
     
     

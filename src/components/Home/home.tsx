@@ -16,6 +16,7 @@ const Home = () => {
         
           <div id="home">
           <NavBar/>
+          
         </div>    
         
         <div id="search" className="flex justify-center mt-15 sm:mt-60 p-10">

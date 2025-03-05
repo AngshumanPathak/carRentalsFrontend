@@ -1,7 +1,7 @@
-import Bhutan from "../../assets/images/bhutan.jpg"
-import Kaziranga from "../../assets/images/kaziranga.jpg"
-import Shillong from "../../assets/images/ropebridge.jpg"
-import Tawang from "../../assets/images/tawang.jpg"
+import Bhutan from "../../assets/images/Bhutan.jpg"
+import Kaziranga from "../../assets/images/Kaziranga.jpg"
+import Shillong from "../../assets/images/RopeBridge.jpg"
+import Tawang from "../../assets/images/Tawang.jpg"
 
 import { useState, useEffect } from "react"
 
@@ -31,7 +31,7 @@ export const Caraousel = () => {
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 1.1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         {/* Background Image */}
         <img
