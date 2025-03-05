@@ -1,4 +1,4 @@
-import Bhutan from "../../assets/images/Bhutan.jpg"
+import Bhutan from "../../assets/images/bhutan.jpg"
 import Kaziranga from "../../assets/images/Kaziranga.jpg"
 import Shillong from "../../assets/images/RopeBridge.jpg"
 import Tawang from "../../assets/images/Tawang.jpg"
