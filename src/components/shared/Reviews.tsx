@@ -32,7 +32,7 @@ const Reviews = () => {
                 }
             } catch (error) {
                 setError("Failed to fetch reviews");
-                console.error("Error fetching reviews:", error);
+                
             } finally {
                 setIsLoading(false);
             }

@@ -8,7 +8,7 @@ import Github from "../../assets/icons/githubLogo.svg"
 export const Footer = () => {
     return (
         <footer className="bg-gradient-to-t from-yellow-500 to-black text-white py-6 mt-10">
-        <div className="container mx-auto p-4 text-center md:text-left">
+        <div className="container mx-auto p-4 text-center md:text-left mb-10">
           <div className="grid grid-cols-1 md:grid-cols-2 md:ml-50 gap-8">
             
             
@@ -18,7 +18,7 @@ export const Footer = () => {
             <div>
               <h2 className="text-lg font-semibold">Follow Us</h2>
               <div className="flex justify-center md:justify-start gap-4 mt-2">
-                <a href="https://facebook.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer" ><img src={Facebook} alt="" className="w-8 h-8" />Facebook</a>
+                <a href="https://www.facebook.com/share/1G2DCUkLbt/" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer" ><img src={Facebook} alt="" className="w-8 h-8" />Facebook</a>
                 <a href="https://www.instagram.com/nh37carrental/" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer" ><img src={Instagram} alt="" className="w-8 h-8" />Instagram</a>
                 
               </div>
