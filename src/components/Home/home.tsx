@@ -36,7 +36,10 @@ const Home = () => {
          
         </>
        ):(
-        <CarCard/>
+        <div id = "carCard">
+           <CarCard/>
+        </div>
+        
        )
        
        }

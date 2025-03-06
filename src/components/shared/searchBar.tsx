@@ -1,6 +1,6 @@
 "use client"
 
-import * as React from "react"
+
 import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 
@@ -19,7 +19,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
   } from "../ui/dropdown-menu"
-  
+import {useCallback, useState }from "react"  
 import {useDispatch} from "react-redux";
 import {setSearchFilters} from "../../redux/Search/searchAction"
 import {SearchFilters} from "../../redux/Search/searchTypes"
@@ -34,11 +34,18 @@ import Permit from "../../assets/icons/location.svg"
 import Guide from "../../assets/icons/guide.svg"
 
 export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
-  const [dateFrom, setDateFrom] = React.useState<Date>()
-  const [dateTo, setDateTo] = React.useState<Date>()
-  const [category, setCategory] = React.useState<string>("Select Category")
+  const [dateFrom, setDateFrom] = useState<Date>()
+  const [dateTo, setDateTo] = useState<Date>()
+  const [category, setCategory] = useState<string>("Select Category")
+
+  
+
+
+  
 
   const dispatch = useDispatch();
+
+  
 
 
   const handleSearch = () => {
@@ -49,8 +56,20 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
     };
 
     dispatch(setSearchFilters(filters));
-  };
 
+   
+  };
+  
+
+   const handleScroll = useCallback((id: string) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn(`Element with id '${id}' not found`);
+      }
+    }, []);
+ 
   return (
     
     <div className="mt-6 sm:-mt-4 flex flex-col items-center">
@@ -119,7 +138,7 @@ export const SearchBar = ({ onSearch }: { onSearch: () => void }) => {
         </div>
     </div>
       <div>
-        <Button className="text-lg h-10 w-40 mt-8 font-bold bg-yellow-500 rounded-md" onClick={()=>{handleSearch(); onSearch();}} >Search</Button>
+        <Button className="text-lg h-10 w-40 mt-8 font-bold bg-yellow-500 rounded-md" onClick={()=>{handleScroll('carCard'); handleSearch(); onSearch();}} >Search</Button>
       </div>
       <div className="flex-col grid grid-cols-2 sm:grid-cols-4 gap-x-16 gap-y-6 mt-10">
   <div className="flex sm:items-center gap-3">

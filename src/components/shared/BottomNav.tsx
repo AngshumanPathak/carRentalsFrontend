@@ -19,7 +19,7 @@ export const BottomNav = () => {
     }
   }, []);
 
-  console.log("hello");
+ 
 
     return (
 
