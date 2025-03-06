@@ -128,7 +128,7 @@ const CarCard = () => {
                 <CardDescription>{vehicle.fuelType}</CardDescription>
               </CardHeader>
               <CardContent>
-                <img className="rounded-md p-2 h-40 w-full object-cover" src={vehicle.image} alt="car" />
+                <img className="rounded-md p-2 h-40 w-full object-cover" src={vehicle.image} alt="Affordable self-drive car rental in Guwahati" />
               </CardContent>
               <CardContent className="text-green-300">
               ₹ {vehicle.price}/day

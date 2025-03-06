@@ -37,7 +37,7 @@ export const Caraousel = () => {
         {/* Background Image */}
         <img
           src={images[currentIndex]}
-          alt="Carousel"
+          alt="Affordable self-drive car rental in Guwahati"
           className="w-full h-full object-cover opacity-80"
         />
 
