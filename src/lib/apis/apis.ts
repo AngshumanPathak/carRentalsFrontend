@@ -1,8 +1,8 @@
 
+import data from './vehicleData.json'
 
 
-
-const VITE_API_BASE_URL = "https://nh-37-car-rentals-ae755c1171a6.herokuapp.com/api";
+const VITE_API_BASE_URL = "";
 
 console.log(VITE_API_BASE_URL);
 
@@ -48,8 +48,8 @@ export const addVehicle = async (vehicleData: any) => {
 
 export const getVehicles = async () => {
     try {
-        const response = await fetch(`${VITE_API_BASE_URL}/vehicles`);
-        return await response.json();
+      
+        return data;
     } catch (error) {
         console.error("Error fetching vehicles:", error);
         throw error;
