@@ -50,7 +50,9 @@ useEffect(() => {
         {/* Text Content - Overlayed on Background */}
         <div className="relative z-10 w-auto sm:w-150 mt-6 text-white sm:text-white font-medium p-5 bg-black/40 rounded-xl">
           <p>
-            Welcome to NH37 Car Rentals, Guwahati’s trusted self-drive car rental service. Whether you're looking for a rugged SUV for an adventure, a sleek sedan for business travel, or a compact hatchback for city drives, we have the perfect ride for you.
+             Welcome to NH37 Car Rentals, a trusted self drive car rental service in Guwahati, Assam.
+  Whether you're looking for a rugged SUV for an adventure, a sleek sedan for business travel,
+  or a compact hatchback for city drives, we have the perfect ride for you.
           </p>
 
           <p>
