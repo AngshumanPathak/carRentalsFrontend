@@ -19,6 +19,7 @@ const Home = () => {
     name="description"
     content="NH37 Car Rentals offers affordable car rentals in Guwahati with hatchbacks, sedans and SUVs. Easy booking for local and outstation trips in Assam."
   />
+  <meta name="google-site-verification" content="El8TrOc3-KmseD5W9VTtavT5dbjUgZV4FJ4SfM4nkAo" />
 </Helmet>
         
           <div id="home">
